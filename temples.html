@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temples</title>
+    <style>
+        #container{
+          width: 100%;
+          background:linear-gradient(to right top,burlywood,black);
+        }
+        #main {
+        position: relative;
+        width: 200px;  
+        height: 145px;
+        border: 3px solid black;
+        }
+       .container .main img{
+          width: 100%;
+          height: 350px;
+          border-radius: 2%;
+          filter: blur(2px);
+        }
+        #text {
+           z-index: 20;
+       position:absolute;    
+       color:gold;
+       font-size:35px;
+       font-weight:bold;
+       left:660px;
+       top:300px;
+       font-style: italic;
+      }
+       
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.box {
+        width: 20%;
+        float: left;
+        margin: 60px 35px;
+        background-color:burlywood;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+      }
+      .box > img {
+        width: 100%;
+        height: 250px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+      }
+      .box > h4 {
+        margin: 0px 10px;
+        text-align: center;
+      }
+      .box > p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+      }
+      .box > a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        background-color:cornsilk;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .box a:hover {
+        background-color:crimson;
+        color: white;
+      }
+
+      @media screen and (min-width: width 500px) {
+        .box {
+          width: 90%;
+          /* float: left; */
+          margin: 10px 5px;
+          background-color: #fff;
+          padding: 5px;
+          border-radius: 3px;
+        }
+      }
+        
+
+    </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="header">
+                 <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+                 <p>The Abode Of Lord Krsna</p>
+                   <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="aboutvrindavan.html"><i class="fas fa-info-circle"></i>About</a>
+                        <div class="aboutdd">
+                            <ul>
+                                <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                                <li><a href="aboutvrindavan.html">Significance</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                        <div class="templesdd">
+                            <ul>
+                                <li><a href="temples.html">Temples</a></li>
+                                <li><a href="ghats.html">Ghats</a></li>
+                                <li><a href="#">Villages</a></li>
+                                <li><a href="index.html">Temple Timings</a></li>
+    
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                        <div class="gallerydd">
+                            <ul>
+                                <li><a href="gallery.html">Photos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                        <div class="servicesdd">
+                            <ul>
+                                <li><a href="#">Local-Travels</a></li>
+                                <li><a href="restaurant.html">Restaurants</a></li>
+                                <li><a href="hotel.html">Hotels</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+                 </ul> 
+            </div>
+            <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+              Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+          </marquee>
+          <div class="main">
+            <img src="./images/premmandir.jpg">
+            <div id="text"><i class ="fas fa-gopuram">TEMPLES<i class="fas fa-gopuram"></i></i></div>
+          </div>
+          <div class="box">
+            <img src="./temples Images/radharaman.jpg" alt="RadhaRamanJi"/>
+            <h4>Sri RadhaRaman Temple</h4>
+            <p>
+                Sri Radha Raman Temple, is an early modern period Hindu temple in Vrindavan, India dedicated to Lord Krishna as Radha Ramana. The temple was constructed at the request of Gopala Bhatta Goswami in 1542 AD....
+            </p>
+      
+            <a href="radharaman.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/bankeybihariji.jpg" alt="" />
+            <h4>BankeyBihari Temple</h4>
+            <p>
+                Bankey Bihari Temple is a Hindu temple of the Radha-vallabha tradition dedicated to Krishna, in the holy city of Vrindavan in the Mathura district of Uttar Pradesh, India. It was constructed in 1864. Situated near.....
+            </p>
+      
+            <a href="bankeybihari.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/radha-vallabh-1.jpg" alt="" />
+            <h4>Sri RadhaVallabh Temple</h4>
+            <p>
+                The Shri Radha Vallabh Temple in Vrindavan, Mathura is a very famous temple of the same preaching. This temple is among the most famous 7 temples of Thakur of Vrindavan including Sri Sri RadhaRaman.....
+            </p>
+      
+            <a href="radhavallabh.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/radha madanmohan.jpg" alt="" />
+            <h4>Sri RadhaMadanMohan Temple</h4>
+            <p>
+                Shri Radha Madan Mohan Temple, is a Hindu temple situated in Vrindavan of Indian state of Uttar Pradesh. It is one of the oldest and highly revered temple of Vrindavan.The presiding deity of the temple is ....
+            </p>
+      
+            <a href="radhamadanmohan.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/radhaGopinath.jpg" alt="" />
+            <h4>Sri Radha Gopinath Temple</h4>
+            <p>
+                Radha Gopinath is considered to be one among the oldest temple in vrindavan located at the bank of Yamuna Ji.
+                Vrajanabha, Lord Krishna's great-grandson, installed the original Gopinath Deity in Vrindavan.... </p>
+      
+            <a href="radhagopinath.html">Read More</a>
+          </div>
+        </div>
+          <div class="box">
+                    <img src="./temples Images/radhashyamsundar.jpg" alt="" />
+                    <h4>Sri RadhaShyamSundar Temple</h4>
+                    <p>Sri Sri Radha Shyam Sundar Temple is one of the holiest temples in the region. And it is revered by all Vaishnavas.
+
+                        The place is popular because of the devotion of Sri Shyamananda prabhu to Sri Krishna and Radha....
+                         </p>
+              
+                    <a href="radhashyamsundar.html">Read More</a>
+                  </div>
+            <img src="../Images/Practical-6/jquery.png" alt="" />
+          
+            <div class="box">
+              <img src="./temples Images/radhagokulananda.jpeg" alt="" />
+              <h4>Sri Radha Gokulananda Temple</h4>
+              <p>
+                  Radha Gokulananda Temple is an ancient shrine, located at Vrindavan, in Uttar Pradesh. It is in between the Kesi Ghat and the Radha-Raman Temple.
+
+                  In this temple there is the small Radha-Vinoda...  </p>
+        
+              <a href="radhagokulananda.html">Read More</a>
+            </div>
+            <div class="box">
+              <img src="./temples Images/radhadamodara.jpeg" alt="" />
+              <h4>Sri Radha Damodara Temple</h4>
+              <p>Shri Radha Damodar Temple was first established by Jiva Goswami in the year 1542 C.E and was located at Seva Kunj of Vrindavan. Later, In 1670, when the Muslim emperor Aurangazeb invaded Vrindavana in the year...
+                 </p>
+        
+              <a href="radhadamodara.html">Read More</a>
+            </div>
+            <div class="box">
+              <img src="./temples Images/radhagovind.jpg" alt="" />
+              <h4>Sri Radha Govind Temple</h4>
+              <p>
+                  Srila Rupa Gosvami originally established this temple under the instruction of Sri Caitanya Mahaprabhu; being ordered to excavate all the lost holy places of Vrindavan. Five thousand years earlier when srila rupa goswami was..
+                 </p>
+        
+              <a href="radhagovind.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/krishnabalaram.jpg" alt="" />
+            <h4>Sri Sri KrishnaBalaram Temple</h4>
+            <p>
+                The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan, holds a special significance for the devotees of the International Society for Krishna Consciousness.This temple is constructed by His Divine Grace ...
+               </p>
+      
+            <a href="iskcontemple.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./images/premmandir.jpg" alt="" />
+            <h4>Prem Mandir</h4>
+            <p>
+                Prem Mandir (lit. The Temple of Love) is a Hindu temple in Vrindavan, Mathura, India. It is maintained by Jagadguru Kripalu Parishat, an international non-profit, educational, spiritual, charitable trust. The complex is on a.... </p>
+      
+            <a href="premmandir.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/gopeshwar.jpg" alt="" />
+            <h4>Gopeshwar Mahadev Temple</h4>
+            <p>
+                Gopeshwar Mahadev Temple is one of the oldest temples in Vrindavan, located in close vicinity to the holy Yamuna River. The temple is revered for the Shiva Linga which was established here by the great-grandson of Lord Krishna, Vrajanabha....</p>
+            <a href="gopeshwar.html">Read More</a>
+          </div>
+          
+        </div>         
+    </body>
+    </html>

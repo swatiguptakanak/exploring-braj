@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>ExploringBraj</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            background-color: burlywood;
+        }
+        /*Code for the header*/
+.header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: blanchedalmond;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.aboutdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .aboutdd ul{
+    display: block;
+}
+.aboutdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .aboutdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.templesdd{
+    display: none;
+}
+
+.header ul li:hover .templesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.templesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .templesdd ul{
+    display: block;
+
+}
+.templesdd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .templesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+
+.gallerydd{
+    display: none;
+}
+
+.header ul li:hover .gallerydd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.gallerydd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .gallerydd ul{
+    display: block;
+
+}
+.gallerydd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .gallerydd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.servicesdd{
+    display: none;
+}
+
+.header ul li:hover .servicesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.servicesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .servicesdd ul{
+    display: block;
+}
+.servicesdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .servicesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.info h1{
+    text-align: center;
+    color: black;
+}
+.image img{
+    float: left;
+            background-color: aquamarine;
+            margin-top:0px;
+            width:20%;
+             height:250px;
+             border-radius: 60%;
+}
+ .text p{
+    color: white;
+    display: block;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 0;
+    text-align: justify;
+}
+.timings h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.timings ul li{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+.location h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.api{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.footer{
+     background-color: rgba(53, 10, 79, .9);
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+    </style>
+</head>
+<body>
+        <div class="header">
+             <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+             <p>The Abode Of Lord Krsna</p>
+               <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a>
+                    <div class="aboutdd">
+                        <ul>
+                            <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                            <li><a href="aboutvrindavan.html">Significance</a></li>
+                        </ul>
+                    </div>
+                <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                    <div class="templesdd">
+                        <ul>
+                            <li><a href="temples.html">Temples</a></li>
+                            <li><a href="ghats.html">Ghats</a></li>
+                            <li><a href="#">Villages</a></li>
+                            <li><a href="index.html">Temple Timings</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                    <div class="gallerydd">
+                        <ul>
+                            <li><a href="gallery.html">Photos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                    <div class="servicesdd">
+                        <ul>
+                            <li><a href="#">Local-Travels</a></li>
+                            <li><a href="restaurant.html">Restaurants</a></li>
+                            <li><a href="hotel.html">Hotels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+             </ul> 
+        </div>
+        <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+            Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+        </marquee>
+        <div class="container">
+            <div class="info">
+                <h1>BANKEBIHARI TEMPLE</h1>
+            </div>
+            <div class="image">
+                <img src="./temples Images/bankeybihariji.jpg">
+                </div>
+                <div class="text">
+                    <p>
+                        The image of Bihariji installed in the Shri Banke Bihari Mandir, is the one granted to Swami Haridas by the celestial couple Shyama-Shyam themselves. Submitting to the desire of devotees The Lord appeared in person with his divine consort and left back a black charming image before disappering.
+
+Swami Haridas ji was born to Shri Ashudhir and his wife Smt Gangadevi on the day of Radha Ashtami i.e. eighth day of second (bright) fortnight of Bhadrapad month of the year 1535 Vikrami(1478 A.D.). He was born in a small village, now known as Haridaspur, near Aligarh in Uttar Pradesh. The linage of the family can be traced back to Shri Gargacharya. Shri Gargachrya was the kulguru (family guru) of Yadavs and visited Brij secretly for conducting the Namkaran Samskar (naming ceremony) of young Krishna and Balram on request of Sri Vasudev. A branch of the family migrated to Multan (now in Pakistan), but some of them returned after a long time. Sri Ashudhir was one such migrant who after returning from Multan settled at the outskirts of Brij, near Aligarh.
+
+Swami Haridas was the reincarnation of Lalita ‘sakhi’ (female friend), of the inner consortium of Lord Krishna. This easily explains the fact that even in his childhood, he was more into meditation and scriptures, while other children of his age were busy playing. He was married at the suitable age according to the time to Harimati. Even after his marriage, young Haridas stayed away from worldly pleasures and concentrated on meditation. Harimati ji was such a saintly soul herself that on realizing the inclination of her husband, she prayed intensely and was bodily transported to the heavenly abode of Lord by entering the flame of a small lamp in the presence of Haridas. No physical remains were left behind!
+
+Soon after that Haridas left his village for Vrindavan, which was a dense forest at that time and choose a secluded spot, which is now known as Nidhivan, to practice his music and to enjoy eternal bliss of meditation. He constantly and continuously meditated on Nitya Ras and Nitya Bihar of Lord at Nitya Vrindavan. His way of Sadhna was to compose and sing songs in the praise of Lord. While on earth, living in a mortal state, he facilitated his regular unobstructed entry in the Nitya Bihar and always enjoyed the pleasure of closeness of Lord. He chose a secluded and densely forested area, Kunj, in Nidhivan as his gateway to the nirvana and was mostly sitting there, singing, meditating and surfing in the ocean of eternal bliss.
+                    </p>
+            </div>
+            <div class="timings">
+                <h1>Temple Timings</h1>
+                <ul>
+                    <li>
+                        Wednesday	8am–12pm, 5:30–9:30pm<br>
+                        Thursday	8am–12pm, 5:30–9:30pm<br>
+                        Friday	8am–12pm, 5:30–9:30pm<br>
+                        Saturday	8am–12pm, 5:30–9:30pm<br>
+                        Sunday	8am–12pm, 5:30–9:30pm<br>
+                        Monday	8am–12pm, 5:30–9:30pm<br>
+                        Tuesday	8am–12pm, 5:30–9:30pm<br>
+                        
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="location">
+                <h1>Location Of The Temple</h1>
+                <div class="api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.4425427303277!2d77.68830451466185!3d27.57980628284493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736e372937faf7%3A0xd1f392db0770da6f!2sShri%20Bankey%20Bihari%20Ji%20Temple%2C%20Vrindavan!5e0!3m2!1sen!2sin!4v1636551542812!5m2!1sen!2sin" width="1300" height="350" style="border:0;" allowfullscreen="yes" loading="lazy"></iframe>                </div>
+            </div>
+            <div class="footer">
+                Copyright © 2020 All Rights Reserved
+            </div>
+            </div>
+        
+        

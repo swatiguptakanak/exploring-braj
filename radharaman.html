@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>ExploringBraj</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            background-color: burlywood;
+        }
+        /*Code for the header*/
+.header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: blanchedalmond;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.aboutdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .aboutdd ul{
+    display: block;
+}
+.aboutdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .aboutdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.templesdd{
+    display: none;
+}
+
+.header ul li:hover .templesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.templesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .templesdd ul{
+    display: block;
+
+}
+.templesdd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .templesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+
+.gallerydd{
+    display: none;
+}
+
+.header ul li:hover .gallerydd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.gallerydd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .gallerydd ul{
+    display: block;
+
+}
+.gallerydd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .gallerydd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.servicesdd{
+    display: none;
+}
+
+.header ul li:hover .servicesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.servicesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .servicesdd ul{
+    display: block;
+}
+.servicesdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .servicesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.info h1{
+    text-align: center;
+    color: black;
+}
+.image img{
+    float: left;
+            background-color: aquamarine;
+            margin-top:0px;
+            width:20%;
+             height:250px;
+             border-radius: 60%;
+}
+ .text p{
+    color: white;
+    display: block;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 0;
+    text-align: justify;
+}
+.timings h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.timings ul li{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+.location h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.api{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.footer{
+     background-color: rgba(53, 10, 79, .9);
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+    </style>
+</head>
+<body>
+        <div class="header">
+             <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+             <p>The Abode Of Lord Krsna</p>
+               <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a>
+                    <div class="aboutdd">
+                        <ul>
+                            <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                            <li><a href="aboutvrindavan.html">Significance</a></li>
+                        </ul>
+                    </div>
+                <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                    <div class="templesdd">
+                        <ul>
+                            <li><a href="temples.html">Temples</a></li>
+                            <li><a href="ghats.html">Ghats</a></li>
+                            <li><a href="#">Villages</a></li>
+                            <li><a href="index.html">Temple Timings</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                    <div class="gallerydd">
+                        <ul>
+                            <li><a href="gallery.html">Photos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                    <div class="servicesdd">
+                        <ul>
+                            <li><a href="#">Local-Travels</a></li>
+                            <li><a href="restaurant.html">Restaurants</a></li>
+                            <li><a href="hotel.html">Hotels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+             </ul> 
+        </div>
+        <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+            Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+        </marquee>
+        <div class="container">
+            <div class="info">
+                <h1>SRI SRI RADHA RAMANJI TEMPLE</h1>
+            </div>
+            <div class="image">
+                <img src="./temples Images/radharaman.jpg">
+                </div>
+                <div class="text">
+                    <p>Radha Raman means the lover (ramana) of Srimati Radha. The temple was established over 500 years ago by Gopala Bhatta Goswami.<br>
+                         At the age of thirty, Gopala Bhatta Gosvami came to Vrindavana. After Chaitanya Mahaprabhu's disappearance Gopala Bhatta Gosvami felt intense separation from the Lord. To relieve his devotee from the pangs of separation, the Lord instructed Gopala Bhatta in a dream "If you want my darshana then make a trip to Nepal".
+                         <br>
+                        In Nepal, Gopala Bhatta bathed in the famous Kali-Gandaki River. Upon dipping his waterpot in the river, he was surprised to see several Shaligrama shilas enter his pot. He dropped the shilas back into the river, but the shilas re-entered his pot when he refilled it.
+                       <br>But, once while chanting, he dreamed to decorate the deities of krsna, but as he had only shaligram shilas, he wept for not able to dress the lord and slept.<br>
+                       In the morning when he woke up, he saw that the shaligrams manifested into deites, and this deity was called as "SHRI RADHARAMANJI".
+                       <br>
+                       <br>
+                       <br>
+                        One can visit radharaman temple to take the darshan of the lord and also to pray his/her obeisances to the sacred samadhi of Srila Gopal Bhatta Goswami.
+                        <br>Even Today,the admirers of Radha ramanji Visit here everyday to take his blessings.
+            </div>
+            <div class="timings">
+                <h1>Temple Timings</h1>
+                <ul>
+                    <li>
+                        8:00 AM - 12:30 PM and 6:00 PM - 8:00 PM
+                Mangla Aarti: 4:00 AM in winter and 5:30 AM in summer
+                    </li>
+                </ul>
+               
+            </div>
+            <div class="location">
+                <h1>Location Of The Temple</h1>
+                <div class="api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.255919082809!2d77.69686581466208!3d27.58559428284255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ea43f6ae20413%3A0x318b2f23c8eb4e94!2sShri%20Radha%20Raman%20Mandir%2C%20Vrindavan!5e0!3m2!1sen!2sin!4v1636550444217!5m2!1sen!2sin" width="1300" height="350" style="border:0;" allowfullscreen="yes" loading="lazy";></iframe>
+                </div>
+            </div>
+            <div class="footer">
+                Copyright © 2020 All Rights Reserved
+            </div>
+            </div>
+        
+        

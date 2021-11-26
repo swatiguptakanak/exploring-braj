@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>ExploringBraj</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            background-color: burlywood;
+        }
+        /*Code for the header*/
+.header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: blanchedalmond;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.aboutdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .aboutdd ul{
+    display: block;
+}
+.aboutdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .aboutdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.templesdd{
+    display: none;
+}
+
+.header ul li:hover .templesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.templesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .templesdd ul{
+    display: block;
+
+}
+.templesdd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .templesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+
+.gallerydd{
+    display: none;
+}
+
+.header ul li:hover .gallerydd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.gallerydd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .gallerydd ul{
+    display: block;
+
+}
+.gallerydd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .gallerydd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.servicesdd{
+    display: none;
+}
+
+.header ul li:hover .servicesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.servicesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .servicesdd ul{
+    display: block;
+}
+.servicesdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .servicesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.info h1{
+    text-align: center;
+    color: black;
+}
+.image img{
+    float: left;
+            background-color: aquamarine;
+            margin-top:0px;
+            width:20%;
+             height:250px;
+             border-radius: 60%;
+}
+ .text p{
+    color: white;
+    display: block;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 0;
+    text-align: justify;
+}
+.timings h1{
+    margin-top: 4%;
+    text-align: center;
+  
+}
+.timings ul li{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+.location h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.api{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.footer{
+     background-color: rgba(53, 10, 79, .9);
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+    </style>
+</head>
+<body>
+        <div class="header">
+             <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+             <p>The Abode Of Lord Krsna</p>
+               <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a>
+                    <div class="aboutdd">
+                        <ul>
+                            <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                            <li><a href="aboutvrindavan.html">Significance</a></li>
+                        </ul>
+                    </div>
+                <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                    <div class="templesdd">
+                        <ul>
+                            <li><a href="temples.html">Temples</a></li>
+                            <li><a href="ghats.html">Ghats</a></li>
+                            <li><a href="#">Villages</a></li>
+                            <li><a href="index.html">Temple Timings</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                    <div class="gallerydd">
+                        <ul>
+                            <li><a href="gallery.html">Photos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                    <div class="servicesdd">
+                        <ul>
+                            <li><a href="#">Local-Travels</a></li>
+                            <li><a href="restaurant.html">Restaurants</a></li>
+                            <li><a href="hotel.html">Hotels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+             </ul> 
+        </div>
+        <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+            Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+        </marquee>
+        <div class="container">
+            <div class="info">
+                <h1>SRI SRI RADHA GOVIND TEMPLE</h1>
+            </div>
+            <div class="image">
+                <img src="./temples Images/radhagovind.jpg">
+                </div>
+                <div class="text">
+                  <p> According to the popular legend, the image of Lord Govind Devji was also called "Bajrakrit" because it was created by Bajranabh – The Great Grand Son of Lord Krishna. Some 5,000 years back when Shri Bajranabh was around 13 years old, he asked his Grand Mother (daughter-in-law of Lord Krishna) as to how Lord Shri Krishna looked like. Then based on her description, he made three images. In first image, the feet show the resemblance with the Lord Krishna's feet. In second image, chest area looked like Krishna's. In third image, the face showed complete resemblance with Lord Krishna's face when he was incarnated on Earth.
+
+                    The first one image known as Lord "Madan Mohan ji". The second image is called as "Gopinathji" and the third image is popular with the name of Lord "Govind Devji". With the passing of ages, the glories of the Indian Culture were being forgotten and the sands of time kept piling up. Together with every other thing, these pious divine images were also lost from the memories of people. Some 500 years ago, legend has it that Sri Chaitanya Mahaprabhu asked one of his disciples to excavate the idol of Govinda, which had been buried there to protect it from the marauders.
+                    
+                   <br> Govind devji temple has a high vibrating living spiritual atmosphere which enlivens the hearts of devotees with Lord Krishna's loving spiritual energy emptying them from effects of materialism taking the soul into higher realms of peace.
+                    
+                    For Vaishnavites, particularly followers of Lord Krishna, this is one of the most important temple outside Vrindavan.
+                    
+                    In this temple, "Aartis" and "Bhog" are offered seven times a day when the deity is unveiled for "Darshan". Thousands of devotees visit the temple daily and an even larger number visit during Janmashtami.  </p>
+            <div class="timings">
+                <h1>Temple Timings</h1>
+                <ul>
+                    <li>
+                        Mangla		4:45 to 5:15 AM<br>
+                        Dhoop		7:45 to 9:00 AM<br>
+                        Shringar		9:30 to 10:15 AM<br>
+                        Rajbhog		11:00 to 11:30 AM<br>
+                        Gwal		17:30 to 18:00 PM<br>
+                        Sandhya		18:30 to 19:45 PM<br>
+                        Shayan		20:45 to 21:15 PM
+                        </li>
+                </ul>
+               
+            </div>
+            <div class="location">
+                <h1>Location Of The Temple</h1>
+                <div class="api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14145.738393886153!2d77.69833902515154!3d27.580052691204468!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736e22b1cadc21%3A0xc1b88d189ee14dd3!2sGovind%20Dev%20Ji%20Temple!5e0!3m2!1sen!2sin!4v1636553905707!5m2!1sen!2sin" width="1300" height="350" style="border:0;" allowfullscreen="yes" loading="lazy"></iframe>
+                    </div>
+                    <div class="footer">
+                Copyright © 2020 All Rights Reserved
+            </div>
+            </div>
+        
+        

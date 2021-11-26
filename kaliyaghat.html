@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>ExploringBraj</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            background-color:thistle;
+        }
+        /*Code for the header*/
+.header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: blanchedalmond;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.aboutdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .aboutdd ul{
+    display: block;
+}
+.aboutdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .aboutdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.templesdd{
+    display: none;
+}
+
+.header ul li:hover .templesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.templesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .templesdd ul{
+    display: block;
+
+}
+.templesdd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .templesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+
+.gallerydd{
+    display: none;
+}
+
+.header ul li:hover .gallerydd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.gallerydd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .gallerydd ul{
+    display: block;
+
+}
+.gallerydd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .gallerydd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.servicesdd{
+    display: none;
+}
+
+.header ul li:hover .servicesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.servicesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .servicesdd ul{
+    display: block;
+}
+.servicesdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .servicesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.info h1{
+    text-align: center;
+    color: black;
+}
+.image img{
+    float: left;
+            background-color: aquamarine;
+            margin-top:1%;
+            width:20%;
+             height:250px;
+             border-radius: 20%;
+}
+ .text p{
+    color:black;
+    font-family: cursive;
+    display: block;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 0;
+    text-align: justify;
+}
+.timings h1{
+    margin-top: 4%;
+    text-align: center;
+    margin-right: 2%;
+  
+}
+.timings ul li{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+.location h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.api{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.footer{
+     background-color: rgba(53, 10, 79, .9);
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+    </style>
+</head>
+<body>
+        <div class="header">
+             <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+             <p>The Abode Of Lord Krsna</p>
+               <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a>
+                    <div class="aboutdd">
+                        <ul>
+                            <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                            <li><a href="aboutvrindavan.html">Significance</a></li>
+                        </ul>
+                    </div>
+                <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                    <div class="templesdd">
+                        <ul>
+                            <li><a href="temples.html">Temples</a></li>
+                            <li><a href="ghats.html">Ghats</a></li>
+                            <li><a href="#">Villages</a></li>
+                            <li><a href="index.html">Temple Timings</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                    <div class="gallerydd">
+                        <ul>
+                            <li><a href="gallery.html">Photos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                    <div class="servicesdd">
+                        <ul>
+                            <li><a href="#">Local-Travels</a></li>
+                            <li><a href="restaurant.html">Restaurants</a></li>
+                            <li><a href="hotel.html">Hotels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+             </ul> 
+        </div>
+        <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+            Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+        </marquee>
+        <div class="container">
+            <div class="info">
+                <h1>KALIYA GHAT</h1>
+            </div>
+            <div class="image">
+                <img src="./temples Images/Kaliyaghat.jpg">
+                </div>
+                <div class="text">
+              <p>Kaliya Ghat is the place where Krishna performed the celebrated pastime of Kaliya Daman or the subduing of the envious serpent, Kaliya. Kaliya Ghat is just at a 3 minutes walking distance from the famous Madanmohan Temple of Srila Sanatana Goswami. The bhajan kutir and samadhi of Shrila Prabhodanand Sarasvati lies close to Kaliya Ghat.  Bilvamangal Thakur’s bhajan place is also nearby. Kaliya was a thousand hooded serpent out of which 101 hoods were most prominent. He, alongwith his wives, the Nagapatnis was staying in a deep pond, called the Kaliya Daha or the poisonous lake of the serpent Kaliya, at this place within the River Yamuna. Previously, Kaliya Ghat was one of the ghats (series of steps leading down to a water body) on the banks of River Yamuna but in due course of time Yamuna changed its path and currently Kaliya Ghat lies at some distance from the Yamuna. This is also the place where Shoubhri Muni was performing his meditation underneath the waters of Yamuna and out of pride he cursed Garuda (the Bird Carrier of Lord Vishnu who thrives on snakes and fishes) to die if he ever came here to eat fishes. In order to escape the wrath of Garuda, Kaliya later took shelter of this lake. Because of the deadly poison of Kaliya all vegetation and life forms near this lake had died except one Kadamba tree which was showered with nectar by Garuda previously. Radhanath Swami narrating the pastime of Kaliya Daman said that once the Gopas and their cows had innocently drunk the water of this Kaliya Daha and had fallen down unconscious.<br> Krishna brought them back to life just by throwing His merciful glance upon them. Then he climbed up this Kadamba tree and elegantly jumped into the lake creating great commotion and huge waves. Infuriated, Kaliya pounced upon Krishna and coiled around Him. Krishna expanded Himself and slipped out of Kaliya’s coils. He dodged Kaliya and jumped over his head and started performing a beautiful dance over the hoods of Kaliya. His graceful moves on the hoods of Kaliya were like thunderbolts for Kaliya and all his hoods collapsed one by one with blood and poison pouring out of his mouths.  Seeing their husband becoming remorseful, the Nagapatnis begged Krishna to forgive Kaliya. Bhaktavatsala Krishna forgave Kaliya and told him not to disturb the Vrajavasis any longer and immediately leave for the ocean. Thus Krishna performed the celebrated subdual of Kaliya serpent at this place.                    </p>
+            <div class="timings">
+                <h1>Temple Timings</h1>
+                <ul>
+                    <li>
+                        Summers: 5:00 AM - 12:00 PM and 4:30 PM - 9:30 PM<br>
+                        Winters: 5:30 AM - 12:00 PM and 4:30 PM to 9:00 PM
+                        </li>
+                </ul>
+               
+            </div>
+            <div class="location">
+                <h1>Location Of The Temple</h1>
+                <div class="api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.4091027362924!2d77.68443426466192!3d27.580843482844497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736e39c749cbaf%3A0x478c501900db65d4!2sKaliya%20Ghat%2C%20Vrindavan%2C%20Uttar%20Pradesh%20281121!5e0!3m2!1sen!2sin!4v1636557186642!5m2!1sen!2sin" width="1300" height="350" style="border:0;" allowfullscreen="yes" loading="lazy"></iframe>
+                    </div>
+                    <div class="footer">
+                Copyright © 2020 All Rights Reserved
+            </div>
+            </div>
+        
+        

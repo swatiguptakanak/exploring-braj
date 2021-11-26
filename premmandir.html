@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>ExploringBraj</title>
+    <style>
+        *{padding: 0;margin: 0;box-sizing: border-box;}
+        .container{
+            background-color: burlywood;
+        }
+        /*Code for the header*/
+.header{
+    height: 80px;
+    width: 100%;
+    background-color:rgba(53, 10, 79, .9);
+    display:flex;
+    padding: 0;
+    background-origin: padding-box;
+    color: white;
+    z-index: 1000;
+    position: relative;
+}
+.header h1{
+    font-size:29px;
+    margin-left:12px;
+    height: 10px;
+    width: 1px;
+    display: flex;
+    margin-top: 10px;
+    color: bisque;
+}
+.header h1 i:nth-child(1){
+    margin-right: 2px;
+}
+.header h1 i:nth-child(2){
+    margin-left: 2px;
+}
+.header p{
+    font-size:20px;
+    margin-left: 0px;
+    float: left;
+    padding-top: 20px;
+    padding-left: 0px;
+    margin-top: 22px;
+    color: blanchedalmond;
+}
+.header ul{
+    list-style: none;
+    display: flex;
+    position:relative;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.header ul li{
+    list-style: none;
+    margin-left: 90px;
+    margin-right: 35px;
+    padding-top: 12px;
+}
+.header ul li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.aboutdd{
+    display: none;
+}
+
+.header ul li:hover .aboutdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.aboutdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .aboutdd ul{
+    display: block;
+}
+.aboutdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .aboutdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.templesdd{
+    display: none;
+}
+
+.header ul li:hover .templesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.templesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .templesdd ul{
+    display: block;
+
+}
+.templesdd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .templesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+
+.gallerydd{
+    display: none;
+}
+
+.header ul li:hover .gallerydd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.gallerydd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .gallerydd ul{
+    display: block;
+
+}
+.gallerydd ul li:hover{
+    background-color:gold;
+    display: block;
+    width: 100px;
+}
+.header ul li:hover .gallerydd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.servicesdd{
+    display: none;
+}
+
+.header ul li:hover .servicesdd{
+    display:block;
+    position: absolute;
+    background-color:rgba(53, 10, 79, .9);   
+    margin-top: 28px;
+    margin-left: -10px;
+}
+.servicesdd ul li{
+    align-items: center;
+    width: 70px;
+    height: 60px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background: transparent;
+}
+.header ul li:hover .servicesdd ul{
+    display: block;
+}
+.servicesdd ul li:hover{
+    background-color:gold;
+    width: 100px;
+    display: block;
+}
+.header ul li:hover .servicesdd ul li{
+    border-bottom: 1px solid goldenrod;
+}
+.info h1{
+    text-align: center;
+    color: black;
+}
+.image img{
+    float: left;
+            background-color: aquamarine;
+            margin-top:0px;
+            width:20%;
+             height:250px;
+             border-radius: 60%;
+}
+ .text p{
+    color: white;
+    display: block;
+    margin-left: 390px;
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 0;
+    text-align: justify;
+}
+.timings h1{
+    margin-top: 4%;
+    text-align: center;
+    margin-right: 20%;
+  
+}
+.timings ul li{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 20px;
+    color: white;
+}
+.location h1{
+    margin-top: 2%;
+    text-align: center;
+}
+.api{
+    margin-left: 10%;
+    margin-top: 2%;
+}
+.footer{
+     background-color: rgba(53, 10, 79, .9);
+     color: whitesmoke;
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+
+    </style>
+</head>
+<body>
+        <div class="header">
+             <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+             <p>The Abode Of Lord Krsna</p>
+               <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="#"><i class="fas fa-info-circle"></i>About</a>
+                    <div class="aboutdd">
+                        <ul>
+                            <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                            <li><a href="aboutvrindavan.html">Significance</a></li>
+                        </ul>
+                    </div>
+                <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                    <div class="templesdd">
+                        <ul>
+                            <li><a href="temples.html">Temples</a></li>
+                            <li><a href="ghats.html">Ghats</a></li>
+                            <li><a href="#">Villages</a></li>
+                            <li><a href="index.html">Temple Timings</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                    <div class="gallerydd">
+                        <ul>
+                            <li><a href="gallery.html">Photos</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                    <div class="servicesdd">
+                        <ul>
+                            <li><a href="#">Local-Travels</a></li>
+                            <li><a href="restaurant.html">Restaurants</a></li>
+                            <li><a href="hotel.html">Hotels</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+             </ul> 
+        </div>
+        <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+            Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+        </marquee>
+        <div class="container">
+            <div class="info">
+                <h1>PREM MANDIR</h1>
+            </div>
+            <div class="image">
+                <img src="./images/premmandir.jpg">
+                </div>
+                <div class="text">
+                  <p>The foundation stone was laid by Jagadguru Shri Kripalu Ji Maharaj in the presence of thousand devotees on 14 January 2001. It took around 1000 artists about 12 years to build the complex.
+
+                    The Vrindavan site was developed by Kripalu Ji Maharaj, whose main ashram was at Vrindavan.[8] He dedicated the gift of love to Shri Vrindavan Dham.
+                    
+                    Prem Mandir is constructed entirely of Italian marble. The total dimensions of the temple including its flag is 125 ft. high, 190 ft. long and the 128 ft. wide raised platform serves as the seat of the two-storeyed white monument.
+                    
+                    A circumambulation route has been constructed on the mandir prangan, the platform of the temple, enabling visitors to view the 48 panels depicting the pastimes of Shri Radha Krishna which are carved on the outer walls of the temple. The walls are made of solid Italian marble, 3.25 ft. thick. The thickness of the walls of the garbha-griha is 8 ft to bear the weight of huge shikhar, swarna Kalash and the Flag. 84 panels have also been set up on the exterior of the temple and display the loving pastimes of Shri Radha Krishna. Other than this, numerous portraits of Radha Krishna Leela, or the miracles of Lord Krishna, can also be found inside the temple.</p>
+            <div class="timings">
+                <h1>Temple Timings</h1>
+                <ul>
+                    <li>
+                       Monday	4:30 am – 1:00 pm,4:30 pm – 8:30 pm<br>
+                       Tuesday	4:30 am – 1:00 pm,4:30 pm – 8:30 pm<br>
+                      Wednesday 4:30 am – 1:00 pm,4:30 pm – 8:30 pm<br>        
+                      Thursday	4:30 am – 1:00 pm, 4:30 pm – 8:30 pm<br>      
+                       Friday	4:30 am – 1:00 pm, 4:30 pm – 8:30 pm<br>
+                      Saturday	4:30 am – 1:00 pm, 4:30 pm – 8:30 pm<br>
+                      Sunday    4:30 am – 1:00 pm, 4:30 pm – 8:30 pm<br>
+                        </li>
+                </ul>
+               
+            </div>
+            <div class="location">
+                <h1>Location Of The Temple</h1>
+                <div class="api">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3536.701070330896!2d77.6697417146617!3d27.571786382848227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736fb46ad6718b%3A0x59edc7620411f9f3!2sPrem%20Mandir%20Vrindavan!5e0!3m2!1sen!2sin!4v1636555304791!5m2!1sen!2sin" width="1300" height="350" style="border:0;" allowfullscreen="yes" loading="lazy"></iframe>        
+                    </div>
+                    <div class="footer">
+                Copyright © 2020 All Rights Reserved
+            </div>
+            </div>
+        
+        

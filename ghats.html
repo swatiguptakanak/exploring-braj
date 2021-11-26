@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Temples</title>
+    <style>
+        #container{
+          width: 100%;
+          background:linear-gradient(to right top,burlywood,black);
+        }
+        #main {
+        position: relative;
+        width: 200px;  
+        height: 145px;
+        border: 3px solid black;
+        }
+       .container .main img{
+          width: 100%;
+          height: 350px;
+          border-radius: 2%;
+          filter: blur(2px);
+        }
+        #text {
+           z-index: 20;
+       position:absolute;    
+       color:gold;
+       font-size:35px;
+       font-weight:bold;
+       left:660px;
+       top:300px;
+       font-style: italic;
+      }
+       
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.box {
+        width: 20%;
+        float: left;
+        margin: 60px 35px;
+        background-color:burlywood;
+        padding: 15px;
+        border-radius: 10%;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+      }
+      .box > img {
+        width: 100%;
+        height: 250px;
+        border-radius: 8%;
+        margin-bottom: 10px;
+      }
+      .box > h4 {
+        margin: 0px 10px;
+        text-align: center;
+      }
+      .box > p {
+        margin: 10px;
+        font-size: 15px;
+        text-align: justify;
+        line-height: 25px;
+      }
+      .box > a {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        color: black;
+        background-color:cornsilk;
+        text-decoration: none;
+        padding: 10px;
+        border-radius: 8px;
+      }
+      .box a:hover {
+        background-color:crimson;
+        color: white;
+      }
+
+      @media screen and (min-width: width 500px) {
+        .box {
+          width: 90%;
+          /* float: left; */
+          margin: 10px 5px;
+          background-color: #fff;
+          padding: 5px;
+          border-radius: 3px;
+        }
+      }
+        
+
+    </style>
+    </head>
+    <body>
+        
+        <div class="container">
+            <div class="header">
+                 <h1><i class="fa fa-dharmachakra" id="1"></i>Vrindavan<i class="fa fa-dharmachakra" id="2"></i></h1>
+                 <p>The Abode Of Lord Krsna</p>
+                   <ul>
+                    <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="aboutvrindavan.html"><i class="fas fa-info-circle"></i>About</a>
+                        <div class="aboutdd">
+                            <ul>
+                                <li><a href="aboutvrindavan.html">Vrindavan Dham</a></li>
+                                <li><a href="aboutvrindavan.html">Significance</a></li>
+                            </ul>
+                        </div>
+                    <li><a href="#"><i class="fa fa-gopuram"></i>Temples</a>
+                        <div class="templesdd">
+                            <ul>
+                                <li><a href="temples.html">Temples</a></li>
+                                <li><a href="ghats.html">Ghats</a></li>
+                                <li><a href="#">Villages</a></li>
+                                <li><a href="index.html">Temple Timings</a></li>
+    
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-photo-video"></i>Gallery</a>
+                        <div class="gallerydd">
+                            <ul>
+                                <li><a href="gallery.html">Photos</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-star"></i>Services</a>
+                        <div class="servicesdd">
+                            <ul>
+                                <li><a href="#">Local-Travels</a></li>
+                                <li><a href="restaurant.html">Restaurants</a></li>
+                                <li><a href="hotel.html">Hotels</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#"><i class="fas fa-address-book"></i>Contact Us</a></li>
+                 </ul> 
+            </div>
+            <marquee style="background-color: gold;padding: 2px; color: white; font-size: 20px;">
+              Welcome To Sri Dham VRINDAVAN!All the information is provided here and can be accessed through the header.Thank You for Visiting!
+          </marquee>
+          <div class="main">
+            <img src="./images/keshi ghat.jpg">
+            <div id="text"><i class ="fas fa-water">Ghats<i class="fas fa-water"></i></i></div>
+          </div>
+          <div class="box">
+            <img src="./temples Images/keshi ghatmain3.jpg" alt="KesiGhat"/>
+            <h4>Keshi Ghat</h4>
+            <p>Keshi Ghat is the principal bathing place in the town of Vrindavan. It is little east of Chir-ghat on the banks of the Yamuna. Keshi Ghat is one of the most beautiful ghats of Yamuna with stone inlaid palaces on the banks and....
+            </p>
+            <a href="keshighat.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/chir ghat.jpg" alt="Chir Ghat" />
+            <h4>Chir Ghat</h4>
+            <p>Chir Ghat is one of the holy ghats (series of steps leading down to a water body) on the banks of the river Yamuna. This is the place where the famous pastime of Krishna stealing the clothes of the young Gopis took place...
+            </p>
+            <a href="chirghat.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/Kaliyaghat.jpg" alt="Kaliya Ghat" />
+            <h4>Kaliya Ghat</h4>
+            <p>Kaliya Ghat is the place where Krishna performed the celebrated pastime of Kaliya Daman or the subduing of the envious serpent, Kaliya. Kaliya Ghat is just at a 3 minutes walking distance from the famous Madanmohan Temple of..
+            </p>
+      
+            <a href="kaliyaghat.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/varahaghat.jpg" alt="Varah Ghat" />
+            <h4>Varaha Ghat</h4>
+            <p>VARAHA GHAT: is situated in the south-western corner of Sri Vrindavan on the old bank of Yamuna. At Varaha Ghata, Krsna manifested His form as the transcedental boar Varaha for the pleasure of the gopis....
+            </p>
+            <a href="varahaghat.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/kusum sarovar1jpg.jpg" alt="Kusum Sarovar" />
+            <h4>Kusum Sarovar</h4>
+            <p>Kusum Sarovar is a sacred water reservoir with a historic sand monument in its backdrop. It is situated on the holy Govardhan Hill between Manasi Ganga and Radha Kund in Mathura district of Uttar Pradesh, India....
+                </p>
+      
+            <a href="kusumsarovar.html">Read More</a>
+          </div>
+        </div>
+          <div class="box">
+                    <img src="./temples Images/PavanSarovar.jpg" alt="Pavana Sarovar" />
+                    <h4>Pavana Sarovar</h4>
+                    <p>Pavana means purifying and sarovar means lake. Thus, it is the lake where all the sins are purifying. It is the most sacred pond of Nadagao.
+
+                        It is also said that Pavana Gopa (the father of Visakha Sakhi) constructed this lake....
+
+                         </p>
+              
+                    <a href="pavanasarovar.html">Read More</a>
+                  </div>
+            <img src="../Images/Practical-6/jquery.png" alt="" />
+          
+            <div class="box">
+              <img src="./temples Images/Surbhi Kund.jpg" alt="Surbhi Kund" />
+              <h4>Surbhi Kund</h4>
+              <p>Here is the place where demigods king Indra workship Supreme Personality of God - Krishna - and apologize him for the offence he made by testing the Supremacy of the Lord Krishna.The even happened when Lord...
+                </p>
+        
+              <a href="surbhikund.html">Read More</a>
+            </div>
+            <div class="box">
+              <img src="./temples Images/vrindakund.jpg" alt="Vrinda Kund" />
+              <h4>Vrinda Kund</h4>
+                 <p>The enchanting Vrinda Kund, situated not far from Nandagaon, is the abode of Srimati Vrinda devi, and it is from here that she contemplates and makes the required arrangements for the pastimes of the divine couple....</p>        
+              <a href="vrindakund.html">Read More</a>
+            </div>
+            <div class="box">
+              <img src="./temples Images/govindkund.jpg" alt="Govind Kund" />
+              <h4>Govind Kund</h4>
+              <p>Govind Kund is located on the edge of Aniyora Village, about 400m after the village of Aniyora. It is a 1.85 acre rectangular tank at the foot of Giriraj Govardhan.
+                This is where Lord Indra bathed Lord Krishna and ....
+                 </p>
+        
+              <a href="govindkund.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/radhakund.jpg" alt="radhakund" />
+            <h4>Radha Kund</h4>
+            <p>According to popular legend, when Lord Krishna slew a mighty asura (demon) in the form of a bull, his consort Radha asked Krishna to wash off his sins by taking dips in various holy rivers. Krishna laughed it off and struck the....
+               </p>
+      
+            <a href="Radhakund.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/shyamkund.jpg" alt="ShyamKund" />
+            <h4>Shyam Kund</h4>
+            <p>According to popular legend, when Lord Krishna slew a mighty asura (demon) in the form of a bull, his consort Radha asked Krishna to wash off his sins by taking dips in various holy rivers. Krishna laughed it off and struck the....
+      </p>
+            <a href="shyamkund.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/lalitakund.jpg" alt="" />
+            <h4>Lalita Kund</h4>
+            <p>Lalita Kund is located in the south east direction of Nand Bhavan. It is believed to be the place where Lalita Sakhi used to come for her morning bath. Near to Kund there is a place known by the name of Jhulan sthali commemorating the....</p>
+            <a href="lalitakund.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/uddhav kund.jpg" alt="" />
+            <h4>Uddhav Kund</h4>
+            <p>This place is located to the west of Kusuma Sarovara on the right side of the parikarama marg. King Vajranabha manifested this Kunda under the guidance of Shandilya rishi and other sages. Uddhava Kund...</p>
+            <a href="uddhavkund.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/mansarovae.jpg" alt="" />
+            <h4>Man Sarovar</h4>
+            <p>Mansarovar Lake and Temple in Vrindavan in Mathura is a holy place associated with Sri Krishna and Radha Rani. Manasarovar Lake is on the outskirts of the Vrindavan town and is about 30-minute drive from the town. The temple....</p>
+            <a href="mansarovar.html">Read More</a>
+          </div>
+          <div class="box">
+            <img src="./temples Images/SankarshanKund.jpg" alt="" />
+            <h4>Sankarshan Kund</h4>
+            <p>Sankarshan Kund is named after Lord Krishna's senior sibling Balram or Lord Vishnu. This kund is accepted to have numerous otherworldly powers and washing in it, frees one from every one of the wrongdoings...</p>
+            <a href="sankarshankund.html">Read More</a>
+          </div>
+          </body>
+          </html>

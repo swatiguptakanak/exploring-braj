@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./videostyle.css"/>
+    
+    <title>video gallery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-size: 62.5%;
+        }
+        body{
+            font-family: Verdana;
+        }
+        #container{
+            min-height: 100vh;
+            background-color: white;
+            width: 100%;
+            padding: 1rem;
+            border: 4px solid#222;
+    
+        }
+        h1,h2{
+            margin: 1em 0;
+            padding: .4rem;
+            background-color: rgba(30, 30, 30, .5);
+            color: black;
+        }
+        h1{
+            text-align: right;
+            border-top: 1px dotted black;
+            border-bottom: 1px dotted black;
+            font-size: 3rem;
+            letter-spacing: 1em;
+            text-transform: uppercase;
+            background-color: transparent;
+        }
+        h2{
+            text-align: left;
+            font-size: 2.5rem;
+        }
+        .vidwrapper{
+            width: 100%;
+            max-width:  800px;
+            margin: 3em auto;
+            border: 5px solid black;
+
+        }
+        .vidcontainer{
+            width: 100%;
+            max-width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+            border: 5px solid brown;
+            position: relative;
+        }
+        .vidcontainer iframe{
+            width: 100%;
+            max-width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+
+        }
+    </style>
+    
+</head>
+
+<body>
+        <div id="container">            
+           <h1>Video Gallery</h1>
+           <h2>vrindavan tourist places</h2>
+           <div class="vidwrapper">
+               <div class="vidcontainer">
+                <iframe  src="https://www.youtube.com/embed/IVYQeH8hy7c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               </div>
+           </div>
+          
+           <div class="vidwrapper">
+               <div class="vidcontainer">
+                <iframe  src="https://www.youtube.com/embed/6gx-f-cvv8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+               </div>
+           </div>
+           <div class="vidwrapper">
+            <div class="vidcontainer">
+                <iframe  src="https://www.youtube.com/embed/wv5DibQukS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="vidwrapper">
+            <div class="vidcontainer">
+                <iframe  src="https://www.youtube.com/embed/0jUfxLkKZXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        </div>
+</body>
+</html>

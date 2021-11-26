@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>restaurant</title>
+    <style>
+        html,body{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #header-img{
+            position: relative;
+            width:100vw;
+            height:600px;
+            background-image:linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.6)), url('https://www.eatthis.com/wp-content/uploads/sites/4/2020/12/unhealthiest-foods-planet.jpg?quality=82&strip=1&resize=640%2C360');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+       
+        .zomato{
+            display: block;
+            font-weight: bolder;
+            color:white;
+            text-align: center;
+            font-size: 50px;
+            margin:0;
+            font-family:'Times New Roman', Times, serif;
+            top: 50%;
+            left: 50%;
+            transform: translateX(10%) translateY(80%);
+        }
+        
+        #second-section{
+            margin-top:50px;
+            margin-bottom: 50px;
+        }
+        .card{
+            width:100%;
+            height:200px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #ccc;
+            overflow: hidden;
+            transition: box-shadow 0.3s;
+            margin-bottom: 10px;
+        }
+        .card:hover{
+            box-shadow: 1px 1px 10px #000;
+            cursor:pointer;
+        }
+        .card-bottom{
+            position: absolute;
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            margin-top: 150px;
+        }
+        #popular-locations{
+            margin-top: 0px;
+            margin-bottom: 50px;
+        }
+        .popular-heading{
+            font-size: 40px;
+            color: black;
+        }
+        .locations-div{
+            width:100%;
+            height:60px;
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .locations-div:hover{
+            box-shadow: 1px 1px 5px #ccc;
+        }
+        
+        @media only screen and (max-width : 768px) {
+            .locations-div{
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>  
+    <div id="header-img">
+        <div class="container">
+            <div class="d-flex justify-content-center header-flex">
+                <p class="zomato">Restaurant To Explore</p>
+            </div>
+        </div>
+    </div>
+
+    <section id="second-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0e/d0/29/e4/beautifull-relaxing-ambience.jpg" height="100%" width="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">11 flower rooftop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="https://content.jdmagicbox.com/comp/mathura/i4/9999px565.x565.210203121513.t1i4/catalogue/agrawal-restaurant-mathura-restaurants-qrubm9g24w.jpg?clr=" height="100%" width="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Agarwal Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQUFBgVFRQZGRgaHBkbHBobGBoaGhobGBsaGxsbGhshIy0kHR0qIRgbJTclKi4xNDQ0GyQ6PzozPi0zNDEBCwsLEA8QHRISHzQrIyozMzM0MzMzMzEzNTYxMzMzMzUzMzMzMzM1MzMzMzMzMzMzMzMzMzM0MzMzMzMzMzMzM//AABEIAMQBAQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAFAAEEBgcDAgj/xABEEAACAQIEAwUFBQYEBQQDAAABAhEAAwQSITEFQVEGEyJhcQcygZGhQlKxwfAUI2KCktEzotLhU3KywvEVVGOTFjVD/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAJREAAgICAgIDAQADAQAAAAAAAAECEQMhEjFBUQQTImFxofCB/9oADAMBAAIRAxEAPwDJKemFOKgYqemr0DQAqVNSoAeaU01OKAFT0oqVgOHXr7ZbVt3P8I0Hqdh8TQBFpGr/AMJ9l+IeDfuJaH3VGd/noB9at3D/AGcYG3BZHun/AORjH9IgU6FaMSU6xz6c/lRDDcExVz/Dw91v5GA+ZFfQWC4Zh7Wlu0iR91FFS0uA7fqKBcjBbPYjiLbYVx/zMg/7qlJ7OuIn/wDkg9bi1uOem7wU9C5MxBvZvxH/AIaf/YtcLvYDiS6/sxb/AJXQ/wDcK3Q3RT9+KKQWz56xPZjG2/fwl0eiFv8Apmhd22UMOpU9GBU/I19OC8OteL1u3cEOiuOjKCPrRxDkfMlOK3ziHYXh17fDhD962TbPyGh+IqqcV9lBgnDYid4S6sf51/00uLHyMtpUY4v2YxmFJ72w4ABOdfGkDc5l2GvOKDg0hipUqVAxClSikTQAqcU1PQIYU5NMaQoAU+VKvWlKgDjTClT0DFT01KgB6VNXoAmANSdABqST0FACAolwfgt/Etls2yx5tsq/8zbCrf2T9nr3IuYqUTcWxox/5zyHlvWoYLCW7SBLaBFGwAgU0hNlK4F7NrSQ2JbvG+4JCD15tV5wuFt21CW0VFGwUACvTOBQ7H8VW2CZA0+tNtInbCL3wOdCeI8da0PCviOoJ2A2MDmaq3FOIMrzc2jMFRiNWiSSIMmhoJvAvbuOroJFppfQE+IA6kEECBtFedn+U2nGOv6a8UnsvXDMScjO7e9qZ3ofxHH3QPCwKx9mZAG5NAsFxfvcOUzIt1ZLgkxl1202pcLxSM6h7hZcsCAckkc2MTXFKc642bcItX5LLwTibOIY6z1mpA4kGkQVIJmToKrKYLu81y2+dFBZgBDADUmDoQKD4PjNxsWyocxDEoMsB1AkrHM+VEJ5Wqi9IxlplsxfaFg5tjI38azEdYMTTYjiF5VzKhuaSYU/DQb/AAoIl5CrOtpQcx3Pu5T7o+cGuf8A6ldJRyABICEE7gzPrqPlTWXIttvXgfB1Ya4Hxl7yku6q2ypzPST+VTl4ncVipy6GNDvH4elQ8tp1LJbMrEuniZXY81JEzM5qfCYtM4F0BGEoM5AJZQWgiSDmVkIjzrpWebXY1CPG/wDQVTjgUw2h86lL2gtD3mAqrcfuJdtu1sO95VzEARIET4fKeXQ0J4bfRrI/ac2cwZAjIp92APfGXxc9xWr+VJK0Q4Ki/wCGuLiHW7PgywVaNp0+syPShvHfZ/gsXLIvcXDrnT3T5smx9RB86jcExVu2xR3YxpKqShU6gzVpdu7CunjQncbeVZ4c9Nt/+kyXow7tL2KxeClnTPa/4qSU/nG6fHTzqtRX1KrAjqDuDqCOhFUDtZ7NLV6bmCy2rm5tbW3P8P3G/wAvkN69OvRKkY0aW9SMZhLlq41u4jI6mGVhBB/XPY1HFSUKkKRNPQB5p6VJhQA00qVKgDlNKkKVAx6VNXTD2XuOqIpZ2ICgbkmgD1hcM9x1t21LOxgKNz/tWxdjOxFvCgXLsPeP9NvyXz8679iuyaYK3ncBrzDxN0/hXy/GrSwJ2ppCbPYrlfuBRTrZcakgD01+FQ8Y6RDZm/y0yUit9pO0fdqcmrHaqNjeKXDDOxLcgOvWrtxLA4O4Zey8jmLjj84oFiOzODuNNvEPbbkLgDoDPUQR8Z3rllFye2bxpeADau53W5JmdeYMHpzGlFjxBrLgreUqACM2ZWUHcA6/I0L41wa7g8mZSEO11DntsJ2UjZo5GDvUW9esG2UAd35XDCaT93xcutc88FvZMney3do8OQlvF2VAxDlMwBBDiDIKnQ8vlFSuH8PTF2wUU2X1DJErm2JX+H0qsPxZStqyt0IiQmfu5cARBbxaiSSdAfWrXjrj2Ey4e8jswVVZQxAGQBm0EKSwnes5QaSX/UEXRD4Vhkw2Le28lHttbLTHvKA0DkdTprtUVOG2rWKFu4zJtkgZi41OcEe6IETE7ivGQ3CjX7hDJmnLsSYgxyOhE86IPgGa6uJW4XhVUrt4V022+XXnWfNdFvRy43dt58rWRG+dWcZ4+8c2pP8A5qC94EoEEJy12Myw16aCjnFEt3LayDlL+MLqRopmd1EgmQPxrre4Tg7c2rDC/fcF0V3hbesZgByExrJojBSXZKm0tggcXW07gyCDlVoDoW6NpBFebHE2ulRdQOFhlgaBlkLEdNqKXezRbRspzAgoCR4jEsCdZ0Ne+M8Cu28K6W70WlBYJJ8EQdDqSd9SedTGEOlaHxdWTcNh3soLiFGRwc2eWideWp3AqTddTbNxLai6AAggF+7GkoN4GbppVPwvHbosIhYEAkFju287CDodT6GrFgOJG5kt21zFdjEtrEgfIfKiUa0gUXWwdgsLeuHuwxQKdm96JJOvMcqu2CS4hWEldozSN+fw50Ws4ZzbgoqEjUf3ArzcULtXTD4jtOTM5M5s7i4YXw8o2qZbeeRFBMTfAqIMYQfCxHoYrvjNR0Txsm9q+y1jiFvK4yXVH7u6B4l8m+8nkfhBrB+OcGvYO61m8mVhqCNVdeTIeY/DnW84XjZBi4JH3h7w9Rzrr2j4BY4jYyMRO9u4NSjdR1B2K860TUhU0fN9LNRDjPC7mFuvYurldDr0YHZlPNSNQfzmoAFSUeRTmnpmoAalSilQBxp5rzNMTQMcmtZ9nfZkWU/aLq/vHHhB+wp/M86pnYbgv7RfzuPBbIJ6M32R8N/lWtviwogUWOgoLlFcNhcoDN73Tkv+9Bezx7y75IMx9Tov503bjtOuFTu0I7xh/SDOvrRzSVsSg5Pihu0faCxhgc7S/wB0an49Kzjinbq4xPdoFHnqaBYl2usXLFiTqTzNQ3w4gzEjcCsHkb7dHXHCor2Sr3ae+3MfIVzt9o2nxqCOo0NQHw4rjdwwoTQOP8L5wTtAhUo4Fyw+j221EHy5HzoD2u4QMHcC22zW7wz23O5t6Sk9QdD1EHnVdw95rbgg+vmK0DjFk4ng9twMz2r8IeeV1bMB9D/LVV7MJryZ+bLhQxHhJIkEHbrG2/OrLw03cVbRUcK9poJOk23HLrGU6eVVhFIGYghTsZgmOlWHgV1c+igI4ySZz5jMGeWoA+NRl6IdUH8XYIHih/DBcKFk8iY8tKj8MvvanxnKdxvHz2o1ibFhrbDv7aFYzDOA66SBl0iZBnUmq3wzDi+TkfXxFZGjZd/oDBrh+qSX6ZUJHbFYh3dmQjUAlZI1HMeu9eMLinFxHUxcQkrz9QJ9aiWw4uMXWFWZOw0/80/eAFrmU5FnUEGdAwj1/Km4a0NUH149fR1BEuwY6iIE89es/I11udsbbW3S4uRtRGbMp5aiB4TznrVWwnGriPDSzFy0yPAW3VSeWu0xpUXGW4uG4wZiYMkAKZ57x8BtVxwpaYnIkcY4mSqpacC2qyQCNWYliyg7QGA0/Ktg9mPBO5wiXXE3LozEndVOw+VYHicQzvrtOwr6j4GwOFtFdsiR8hXbigl2EpNokXTUC8k1MuVwcVo9mSA+Kws1XOIYVl1FXS4lDcdhwQayyQtGkJUU+xjDMGrJ2fx+S5kJ8D6b6BuRqq8Rs5HqZw64THUEVhjm1KmazgmrQe9ofZMY6xmtqP2i0CbZ++N2tk+fLofU1gLCCZBEaERBB5gjka+rT19PwrFPa32cFi+uKtrFu+SHA2W6BJ/rALeqt1r0GjlTM8JrxT0qgoWtKlmpqAI5NICdBqelMaNdksF3uKQESE8Z/l2+pHyobopI0LgeHXB4ZE+0RmY9WOp/tXC/xBmOld+KydKFGuScm3R0Riqsu3s7xv724jHVlBH8p1/GqB2ra5fxl8kgAOw1mIUxHyFSsBxBrF1LiHVTPqOYqR2m4ebhfG4fx238boPftOQM0gfYkE5uU6xzruK/g4ak/wClWuFYy6zyMQPgOlcWnyMfhXFL5jfnNdbF8CS3w00JnnUO7N0kenWAGOoPmKa8ihRcDSdQRrIkGCdIimzCSyiV3I6TyrgzlotqCS0QAJJOsBQNee1VFbJk9A67vWrcZw4wPB8Kl3wu91XZefuOY+EgUuwPs9ZHXFY1QuXxJaMaEah35CNwOW56UK9oPFxj75yGbFlSEIElmPvOonYwAPJfOtpUls45yt0gFwjh37XcW2Oes9AOc9AAAPM134rbQ3mS24t2rUIkCWZiASfPU/qandmx3Nhsp8T/AGmEME5gAExIn51yvYZHvvcnxQpXXSYAzDlJrheaKbXohgnFgG4zQQ+pZtnJEawNFHlVm7J4gOBnyqdVzaKSSNY+B+tDH4LcZ82o009D+NT8LhDbUqyB0OuU6QeoI1BqncoplR6D3HMALlrugwViwBaPsjUGQNtBVC4XhmZnW5OUKdcui9CR8IFGTcuDS2xQCYAM/CTrUng9/J3puRqoEHYnXYc6hSaVFNUikYg+MlSJ+O45+tO7FzJSP1rXvGJBkASdY568orpZtu41AUz9Pga6r1YKIPR9W0kcq3j2W8fW9hlssfGg0nmvMeoNYaILMBGhonwTjDYa4GUldZkcj/arTp2hNWj6Uda4sKr3Z3tjaxCgXCFbryPnVikMJUgjqDNapp9GTTXZwcVFxC1NcVDxFJgU7tHbAg+dd+yXDjcuAkeFSCT6bCid/gb32Gc5EB/mPoOVH8Oluygt2wAB+tfOsIYm58n0bSmuPFE5mmhHafg4xmEu4cxmdZQn7Lr4kP8AUB8CaIJcmugau05j5VdCCQQQRIIO4I0IPmCK8sKt/tP4WMPxG7lELdC3l6eOQ/8AnVz8aqJqGaIb409NIpUxkSr77M8JPe3I+6o+Gp/GqFWrezSzGELfedj8jH5VLGgpjbE0Ax9uKM8VxD94EUfkPU+VROJIFQSfFrOtcc5x5NG8U6RVL90114Zxu5YfMjEen9q5YqCYUEk7ACST5Ab15/8AR8UxgYdx1LoyKPiwFNMtosaYnAYvW7ZCOd3tHuyT1K+7PmQa9nshgjqMVcUfxIjfUQPpXPgvYUsveYi5A5Kun1OtTeJ9mVZVSxcdGkDxO8Ec5Gv0FNTV0Z8vTFg+xmBBlsRecdFyID5HQn61beD4HBYUTZsohjVz47h/mMn60PwHAe6sNZLguykd4VzGSN9TOlP2e4e1v/FuOxB03UR89af3KLqiWuSbs49rOJ4jEIbNpHVD7xymXHTyXr1qq4fsvi2bSzpA3ZQCQfWdjWom0lwZTsfUa9QRqKDWnuXLht2Lj5EYrc7zUacrbEZifjFRNue/AopJUVvC8DuI8XWS3ljwg5j8Y02rhb7PXZe7de34sxHiIjePsjbp5Vb2wFsMWKlupZidfnQzjuAt3LcKSjbhlnr0B1rkSimxrHFjYF7TKF7xC43Ck/mAal3MHmQsFOUbtAAHn6edBuz2DuYR1RQLmcks4OXJ0meXpV2THlRrXSslRpsUoJPRQb/DlVgxuIoJgSSZPqoIrw3CUuE91dS43MItx48pVSPwq1uUQwAsOTpkBgHl6fCiPCOC27UtbhM2pAAUT5AAVEYtltxryZ3f7CX72gCA/wAWdD9UqMvs4x1sF1to7ch3ijTnvGtbD3Ma7/Wmzk6VpGT6Zm2YZc9n2PLGLBUatmLq2sTlAQkzPl8aY9icelvO9iQOjKWE7ZhMgefLnW7JAMda9YhAwysAw2I8q05OtiUtmM8N7G44AOtxE55Tmb6/2q08KtcUtGLiJA2KuTm9NNPjV9TC2xoBA6V7vWwo6jy5VP6q2x8rKTj+2LYZ1t3kcFhIMSpjoedd8J2xt3GVBnltPd0HqaODBhpFwI6TIV0DR01P4xUvDYOza9y2i+iKPwFNTk1pj/C7RGXEltA4HU8/9qlJZUD3p+Vcv2O2XLHXNuIEdNjVb7U8Su4O8i27RNtwNQhyZyTOUjQaRpU88lWyowjJ0mW5ABtUkGgXBOIK4gnxACQfPoedGLNwMJHp0IPQg7GunBPlExyQcXTM29t2DlMLfA1DPbP8wDr8sjfOsimt19r9kNwzNzS9bYfzZk/BzWF1rIlDR5Uqf409IZCrXfZ88YJfVvxNZFWkdjMXGCInYt+JqZOtlxV6OmO4kFuM7awSPhQpcebrHTMx0URO/IDr9aicXcaydTyFCEdxDAkZTp61w/Xy2zug1ELol+1fUsrI2YQBuZ6DXWtNfEs+VGkRBIIqk9lcZc75GLLmZlBZxI1Ow/XSrT2m4qmGuHvNyFIgbg8vX+9HfRGWLtf4LBOdYO1QVtBbmmpHWvHDeIC8q3Lc5StRsTx/D23cPcAZRqu59B51C7MOL6LBauyRm1Irs5mZArKbvabEG8jF8lovOgGizs3w/Grh/wDl2GDKouAyBt1O0mtH1sHjkmWhFnXauikAfmN642m8IbkddPOu6NpStrSIB+KI1XrQ+8wBAAotiUnQ0LxFgrJ+VYxjsux0Oo0HTzrjxHiRswDbLKftDWPh0oW3ET3yIR4WNGeN2VNuZjQwehqnFtNoqLSkrVo7cOAueJl9JFHLdwCqk+KvW8OGs2xdMhYDQRPPbaiWGx7Jb7y6MkATm0APrtWsHSRE4h44oBwhIkiYncTH5VCTils3WtZvGJOXnCmJ9KDvxnBXVNx7qwq7h4IGpgfE/Wo/AeEMbgxDZJIhSBJytB1J1jQaVfJ2qQcFxbei2559a7Wk5zQ7GpcUZlBYgHwjcxrp5144Lx63dti4slZy+6dG2II5VVK9mdNq0GmrhccnavLYmvKtMkUpvwhRR4X11r2rRo1DOK8UWy4VlMFQ2YAsNTEEDYzt1mo+G47bvkC3czQYbQ/KocuKL4PsKvc1MD413wd1yQOpqBdxAWN9fp50T4WwMazTxxlyuxSaokrh7baZRHSPqPOg/DeEuLty7cdg7MfCMpGVTCgGJiBP8xqwIsMelOw1muhryR2Un2sf/qrg6vZ/61P5VgjEdIrcfbTiMuARPv30HwVLjT81X51hjCtmJCzU1PlpqQyLVs7IYn91ct9CD8x/cGqnRPs/icl2DswI+I1H5/OomrizSDqSJ/Gklh9KVguAq5fDsQRI3maP8M4YL1zO/uzp5+lGMXw1dco51w/Zqjq5UwNhmCG3ciUVhmUdBz+cGiXaHj9nG2Gtd3luIZRzAiN1011Hw0qGtjKjazBII6dDQLGYYux7seLmKUNGilGT/Xa6D/ZTtJctKtprebkCCBAHNiTFBeOXxisR3iKU5EGJOXy2rzw8ZFNu4jhnIyGYEA9fWrBhMKbbi46cxqQJMbT1J11q5SroOMY/oHYjhztZRAYLNsdgdppDsncV0MkroW/XSrPxG2LyzbjMpzKJ0HMj0rxiOKXDbNu2AsJLZt9+Uf7VmnJaT0ZzyOTssFrHd1b8Z8KjU+Qrrge0uGuDS6n9Q5UCULcwTpcYlssMNjqND6a1U+DcAzd4zzCqxBUayByEVcJapmSgndmnW+IW3BZXBHWdKjY/iVtbbXM4yqCSZ6VlCC6AwGfKw1VcwA09a7nDhrDtnZZywORYESCNgNPjSjFLRbxV5LHieNWzcV3tukANtO+vwqPieNPjNiUS3BiYLEmNaE2uGXWV3ZyYBCszZjlXYKOmhiNqjWcJdtIWykK3lrAOmlD6dM0jCKabLDjuP4pcOi2xknUupzHKDtH2aF47jN66nd3LhdJDFT7s6weWo6VaOE27bWwpZFkAAA7nck8p15V0u9lQ7IrXFgnNEe9y8LTEjzrP7VVNlRcU+il4+6QqKhBBAMdD0PwrT+xHHLd22oJAIEESJBHKq7b4PbF3urtoDLIgCSQdm0nlGtRLfBl7xltKQUJ8fPQbfl6itISfgzzSjI1kQW0PpQPBWxbv4m2VgM+cba59Z0/X41XeCcYuW7mS5cJiIlSSfKZqwPaVrly+JaUUBJ1Lk6HfYVM/kJa8mUcTp+mEbVotAFe7vEbdmVOYkCYCkk89OvrXnh98lTKkMNDtv5VHu4TvLmc6gQo00IHXyn8KuErVrszlGnTMu7WYvE33uNkKrmmATPdqIyxsQNz51FwPaR8Phu7QLmBBBI2nUx13q/cVwyJmhfDEDnEjxAVXMdgbVzDsuWG5HTkNAKOSTpnRGSlGmvQDxvabF3SkSGUeEpInNEyJ1nKNPLzq+9h+PqVQX7mW5oCCYBkwCBtr+NUbhXCxctuS0OkADkV6j01qz2+zsZbiOzrlUFDG6xuOkiR69an7adpGsscGqbpmmXMao11iY0BM/KvVi+WO0coO9Vzg1w5GtsfNM2wMR8qOYRiVAYww0raORypnHKCjaMv9uGOm5hrH3Ue4fMuQq/EBG/qHWsrrU/bZjZfDWdNA9w/e1IRR5DRvWPKstFdadqzEWamp4Pl86VAESjPAsJmlyNR7p5eenXzoNRG3xEJZNtVhm95pjny66AVM02qRcGk7ZfeD3baIPEDvPPUEyPnRVMUrEDMI1rPeymPCv3T+62q+R5j8/gavb8KUjMPpXHLA09G6yJrZG4qQAco3/Kqq5EMxYAhguQ+8QQSWHltRviuFuKphjFABhGJ8c+vMfCorj2yqcloNcMZJW5p4SCC2sR9n6/jRLj/GgJBB3Bn4afjTYbhuWz4bYckSrEKQNNCAGJnzAoVi8Q+VrLAlnzIVgmC2uYA7HnWcJ26KcXSs7cExwu3QpfL4WMyBsNBrpEkUf4lmOEtstty5lDpmcgEnXLOkjT1qn9msZ3F1iEUnbxiYynkeR31rRMHxgZGzNqVJBJXQkGJ8qnLLjKhrG2rKrax96ywvm22QzbeRuFEE69CPpU7s/wAdtQ4cMDspEQ06HQ+WutD+0ihrAYW2tsmmk5GDGTHQ6zQGzbugGLb6QT4ToDtJq4rlGx8V5LXxNM03LWi6lxtIA1jly/GhK3Ldyz3gt5C1xVCiYKgQTHXqfKp3ZwX3V2CaIpIBjxMQQBH5nSjHDLFwWx3iMgS2iBQqlfDOrbwNfpSlOl/Q4JdEXD8JSGEmQRCKVzGAJGu+snlApsSCrG3bsO7KQuZyCikwdl30NE8KWyd3eCo4P7u6oDL0g+evr9ZH3A9txmzs5MMLeZ1Ea5zGwIjSsHOVey1BWcO4KYQLqbpvNJUbsQZER7ugo5wm5uTcJzmFHIFVAdh0Mg/KoTcZud07olyfdUgFTJbJpIjQ9YHnQvCr+0xbuM1q5bhJB9/NGc9JJgTrz60nFtcnopLVFx4gtx7Q7plLhlDsBJygQYaN9tfwqs43DXLdtmQXSMxmEKnlLHnl86k27YIDW5CrnXxlszMhy+I9J1Op9BQTGY67Yc27jfvGIlkuMV5Tpuuh0p45S6Xgn60w/wACXvbRXKBdQEqWUy6TJjmTP61r3jcZKoXdrLkBAV1VmmSfSCeYNP2Y4iLtq73kjIXAQgA5AiwVbeT4q53OHi0Mi2bj2SqMVcMe7YsQSjnkNDE/2qWvZakkyz8FvXAirJc5SxbYkk7Dl9elSjiGDPI8JdcpkRyLTzEE1U+F8RKuhRpw9l+7uZACQz6IzcyksJgaTvoaJcTxFu3cS33qo2VnQMT4hnJZR5sGX5VpBzhHT2YzipSCWNsNc8DaDQ5wdIG5nrVSxnusiMIDSDG4/Rqx4fiXd2WdlLqDsdCBudD+taF9ouFC5lu2wy7SqkZCI+8sEH8an7ee32Cx8f8ABWcKndsSI1g+mtWfC4nIcyNofs7gDmPSuHDOzeuZpPrqfnVnw/ClURFdmL4smrZlkzRsH4fEkNIBaTPPT5107RcfGBsreuKTnYKiAjMzRJjoAAZJ8utHsJgFGpgAaknYAVh/tC7R/t2JLJ/g25S10IB8T/zkfJVrph8ZR7ZzyyX0Qu2HaVsfeFwpkVVCIsgnKCSSzDckttsPnIE0wPl9KTGf1tW6VED5R0NKmn1+dNTAi0qempDErEEEGCNQehFah2L46t5BbcjMND6/2NZdUjBYt7NwOh1HLqOhoasE6N4u8MVxtpVb4n2fYEtbGnT+1T+yHaZL6hSddtdweh86uHdKRWcsUZotZJRZmuBe8WhbzAqMoRpAKjQCQRqBzqA1ubjoS+dpCsdCLgECY2PnWhYvgKO2bY9Roap/ajglxWzt41MST0HJo5edcUsEob8HVDNGWiFwbCWrd1MxDHQktDDxDUEHznWu3GLd2yc5ywQ+iqQFVT4QW+14TPwNduBMAcndgwjLBjMUPJSehobiLzLOHOilgQTM67nX8q50227N3ro4I5umPGyATBMfE8gJ+NT+GY1mcpaDSgIVw8KvkZMMPI/Soyq9m2x7tijZgWEnUSNY1Hoajdn8wzFRJaRt9pv7CTVtLjZipNssHCuKXGcqxnMCDC5eR3K/jU/jV8oi90QhGhy+KdDpqIO31oO3HFe4EtW7UAKreAAu/wBohtfDy+dFhj7WIsPbCFLiXEOUn3sxCnIT5cj0rF42m2Wppvo6OWGHt3FElgVuK3h8QO4H2W0PTaqxxXjltsSptlwhRJgshzayfTby586uGGwpdLlu572xSDqR7s66NEajyqicexrqXt92CqeEMU1UjptERFXgSb6KbplqvcRe3hu8EXEg5j7rpGu40bbpVXscTZmNwghWlZMA69Y5jrUvsZxQEvauAsrqRGpjTeK6dkcBnuXEdTOS4AHHuqwjUHrmG9bOKSp9k9W0GOAs5wyOXH7x2DZjlBZdiDBykkEfGg3aJ0GKRXRkfKM5YLJnYhgddj8qKcD4iAlm0cuSyj5oUyzNor5do1OnU1wt8P7xWW/mZrY8C/aExBB3K76HpWK4xkwkpSRFa2lpmuKWyjVlQiWywcxB3EkD4ip/DO016XuMX7kbZzDFjHhUbHX5VAwfDr1rETczW0IAzqoclSNNtBp1rjjuFs7G8LoYK2g8RLSx2A8KkKNY0qnx6b2Oqj7LLhce83GueBCrFwU1ATxA5hoza7AUQW13rJde3LKvhjUZBqD5mIobaC4iy9uZMDNHmQI+J0o3wzAXkRVBytbZlzDUEbHQ8tIrmS5ukmJT/NukdLd83UzkMUGbwhBLrBBGuw8zG1GsLaBWQoCsBp0rrhMPlGo1+lS1WvS+P8NxalI5cvyE1xic0tAV3t25p1SaqXtA7bJgLZs2SGxLDTmLSn7b+fRee+1ekcgH9q3a0W1OAsN43H79h9hCP8MH7zDfovrpkd08v1pTNcYksxLMxJZmMkljJLE7knWa8O8/DpUNlJHk/wDinB03piaaaBi+FKnn0+lNTAj01PSqQPNKKcilFAztgMc9lw6GDzHIjoa13sh2yS6oVjqNwdx69R51jRFerN5rbBlYqw2IpteV2F+GfTtt1cSDNM+HDaESKyPst27KEJdOXz+yf9J+lahw7jFu4BB1pXemJxraB+J7N286vb8JUyBy+FVntF2euSLmUnL93Uekb1pGhpnSspfGjLa0aRzyiY9jbdxSBaZg5jOm2YeYOkjqK9Wb1zC2ymQGdZmGXNzIjXyrSuJcFt3dWXXkRoR6UA4h2Xf/ABEILrzj3gNgfOuXJ8eUVS2jphni+9AXgvCMNctd6invE8RGc+JQdYgaGPwrrdu21um41sLaJQNL7NAg+Q2160dwXDr1u2bkHMBOgAE9DOselccNhu8tl2UZgkqsAwVY6jz5VxTUr/SZrGUbbRA4abzG9ee4yr3kKpAJbKSAA2kCDy3qDd4ohuFbzsQrT9nIImFYRrGnxoxh7nePF15Q6ZSIA6mRrPnQvi3ZlUuK1vI6IxOQvBad1PI668qIVJtjeiLZ4mpZks5bSkEq4UQW3ho2mpGDuG1bvXFuF3ZACDJJOgMNyJA05DShV/hxtu7W5yGSFG6E8o5inwd64XgW3OaBojabbECulQ9CuLIXCLyCbbklXzI45pPus3mp5+flVpxfDhdFt7ocsqZCbbaOpIykjn/vRXh3ZNbih7tkhyTmlssgAgHQ89D1mimB7LNakJdOTkpkx9amWLJN3FNCllgtNgAvcuZ0t7KiAggnMsAN6n+1EcPwJXuOuwCooAlY0liSNCx+lWPh3CBbzFjnJ69OlElQVph+FLuTr+GOT5MeogThPBltljkCzlgAk+7qCSaNJbA2EV0ApwK78eGMOkck8kpdjAV0RJqLxLiNnDWzcv3FRBzY7+QG5PkKyDth7TLuIzWcJmtWjIL7XHHlHuKfn6bVsZlt7d+0S3hA1jClXv7M+6Wv9T/w7Dn0OK3LrXGa5cYu7EszMZLMdyTzrmiQKctUtlpDTOtICnjT9cqYmpGJqTaU1OKYDx5U1LL60qAI9KnFOwpAeYpU9NFAxqYivVKKAOZFFOE8ev4cjI0qPstqPhzFD4ryVp6fYuujV+Ae0O28LcORujbfBtvnV8wfGLdwDUV81EVNwHFr9k/u7jKOm6/I6UU10Gn2fTKOp511AFYbwv2i3UgXEzDqpg/0n+9XDhvtGwzwGfIejgj67UcvaFx9GhMgIjlXEYNAcwUAxHwoTg+0lm4JW4p9GBojb4ih5ij8yF+kel4dbBnIJ9K6/sqfdHypLilPOvYvL1pqMQbYwwqfdHyrqtsDYAV4FwdafvRTEdBSrkb6jnQ/G9osLZ/xb9tPVxPy3p2hbC4pwKoXEPangbc5O8vN/CuVf6mjT0qncX9quLuStlEsqefvt8yMo+RpWOjZsdxC1YQvduIijmzAD61nXaL2s20lMEmdv+I4KoPML7zfGKyfHY27ffPduO7dXYmPToPIV4W3uaLHRL4rxW/in72/cZ25TsoPJV2UbbVFVQN6ciBSblU2UMzazSApvx/Xzpi1ID0P96UTz1/W9Nt+vypp86AHzTT7mvINKdaYHufM/OlSkdKVAEc0hSpUgGp6VKgY5pjSpUAIimpUqAFXlhSpVQmeaVKlQIdDzGh8qm2eKYhRK37g/nNNSoAmr2rxq7YhviFP4iuydtsf/wC4P9Kf2pUqVaGOe3HEP/cEeiJ/prle7WY5t8Vc+BC/gBSpUCIGI4lfuAl71xvV2I+U1FCilSpgOK9ClSoAkW0FeRSpUgEdz6Uhz/XOlSpDPLb0mGvy/ClSoA9D8x+FeBzpUqAH/wBqflSpUAKlSpUxH//Z" height="100%" width="100%"/>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">MVT Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="https://timesofindia.indiatimes.com/travel/mathura/status-restaurant/ps50667701.cms">
+                        <img src="https://static.toiimg.com/thumb/msid-50667788,width-550,height-433/50667788.jpg" height="100%" width="100%"/>
+                    </a>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Status Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="second-section">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-3" >
+                    <div class="card">
+                        <a href="https://timesofindia.indiatimes.com/travel/vrindavan/dasaprakash-restaurant/ps50667500.cms">
+                        
+                        <img src="https://static.toiimg.com/thumb/msid-50667531,width-550,height-433/50667531.jpg" height="100%" width="100%"/>
+                    </a>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Dasaprakash </p>
+                        </div>
+                    </div>
+                </div>
+            
+                
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="https://timesofindia.indiatimes.com/travel/mathura/taj-family-restaurant/ps50667552.cms">
+                        <img src="https://static.toiimg.com/thumb/msid-50667581,width-550,height-433/50667581.jpg" height="100%" width="100%"/>
+                    </a>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Taj Family Restaurant</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="https://timesofindia.indiatimes.com/travel/mathura/dosa-plaza/ps50667611.cms">
+                        <img src="https://static.toiimg.com/thumb/msid-50667620,width-550,height-433/50667620.jpg" height="100%" width="100%"/>
+                    </a>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Dosa Plaza</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <a href="https://timesofindia.indiatimes.com/travel/mathura/bansal-foods-restaurant/ps50667664.cms">
+                        <img src="https://static.toiimg.com/thumb/msid-50667683,width-550,height-433/50667683.jpg" height="100%" width="100%"/>
+                    </a>
+                        <div class="card-bottom">
+                            <p class="h4 m-0 mt-2 text-center">Bansal Food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <body style="background-color: grey;">
+    <section id="popular-locations">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <p class="popular-heading">Popular locations in and around <span class="font-weight-bold">vrindavan</span></p>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">bhaktivedanta swami marg</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">near banke bihari mandir</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">iskon temple road</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">parikrama marg</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">Mukundapur</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center locations-div">
+                        <p class="m-0 ml-3 h5">Rashbehari</p>
+                        <i class="fa fa-arrow-right ml-auto mr-4"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html
